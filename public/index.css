@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+/***bar**/
+.bar{
+    width: 100%;
+    height: 66px;
+    box-shadow: 0px 0px 0px 1px rgba(5, 5, 5, 0.177);
+
+}
+.nintendo{
+    width: 140px;
+    height: 66px;
+    top: 0px;
+}
+
+.search{
+    top: -40px;
+    width: 280px;
+    left: 160px;
+    position: relative;
+    border-color: transparent;
+    box-shadow: 0px 1px 0px 0px rgba(5, 5, 5, 0.912);
+
+}
+
+
+.searchInput{
+    text-align: center;
+    width: 200px;
+    
+    border-color: transparent;
+    font-size: 16px;
+    
+}
+
