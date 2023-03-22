@@ -7,29 +7,98 @@
     <link rel="stylesheet" href="./app/components/navBar/nav.css">
     <link rel="stylesheet" href="./app/components/lateral/lateral.css">
     <title>TALLER 2</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./app/index.css">
+    <link rel="stylesheet" href="./app/components/featured/featured.css">
+    
+    
+    
+    
+    
+    
 </head>
 <body>
+      <!--Bar -->
+<div class="barcontainer" >
     <div class="bar">
         <img class="nintendo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Nintendo_Logo_2017.png/640px-Nintendo_Logo_2017.png">
         <div class="search">
-            <img class="searchIcon" src="image.png"
-            <input class="searchInput" type="text" placeholder="Busca juegos,equipo,noticias y más" required>
-
+            <svg data-name="Magnifying glass" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="SearchInputstyles__SearchIcon-sc-n42o5d-1 jNtoTz" width="20" role="presentation" alt="" data-testid="MagnifyingGlassIcon" size="20" color="currentColor"><path d="M31.564 28.745l-8.73-8.73a12.66 12.66 0 1 0-2.804 2.834l8.715 8.715a1.5 1.5 0 0 0 2.114 0l.705-.705a1.5 1.5 0 0 0 0-2.114zm-18.966-7.433A8.611 8.611 0 1 1 21.21 12.7a8.62 8.62 0 0 1-8.612 8.612z" fill="currentColor"></path>
+            </svg>
+            <input class="searchInput" type="text" placeholder="Busca juegos, equipo, noticias y más" required>
+        </div>
+        <div class="soporte">
+        <h1><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="22" role="presentation" alt="" data-testid="SupportIcon" size="20" color="currentColor"><path d="M28.126.862H3.876A3.904 3.904 0 0 0 0 4.757v17.838a3.905 3.905 0 0 0 3.875 3.896h8.375c.125 0 .125 0 .125.125l3.626 4.397a.122.122 0 0 0 .125.125c.125 0 .125 0 .25-.125L20 26.616a.122.122 0 0 1 .124-.125h8.001A3.904 3.904 0 0 0 32 22.595V4.757A3.903 3.903 0 0 0 28.126.862zM17.954 20.91a2.018 2.018 0 0 1-.438.64 2.062 2.062 0 0 1-1.446.58 2.092 2.092 0 0 1-.802-.154 1.944 1.944 0 0 1-.652-.43 1.98 1.98 0 0 1-.427-.642 2.119 2.119 0 0 1-.001-1.59 1.97 1.97 0 0 1 .43-.65 2.055 2.055 0 0 1 .643-.432 2.078 2.078 0 0 1 1.613 0 2.152 2.152 0 0 1 .64.428l.002.001a2.045 2.045 0 0 1 .438 2.25zm2.964-10.055a4.505 4.505 0 0 1-.662 1.159 5.04 5.04 0 0 1-.861.844l-.822.622a6.01 6.01 0 0 0-.626.538.766.766 0 0 0-.231.426l-.303 1.923h-2.517l-.222-2.13a1.824 1.824 0 0 1 .193-1.127 3.152 3.152 0 0 1 .648-.812 7.965 7.965 0 0 1 .838-.658 6.94 6.94 0 0 0 .782-.626 3.116 3.116 0 0 0 .574-.716 1.726 1.726 0 0 0 .208-.873 1.287 1.287 0 0 0-.112-.55 1.213 1.213 0 0 0-.318-.414 1.482 1.482 0 0 0-.506-.275 2.946 2.946 0 0 0-1.628.018 3.595 3.595 0 0 0-.666.277 8.824 8.824 0 0 0-.49.294.966.966 0 0 1-1.483-.33l-.872-1.378.24-.212a8 8 0 0 1 .86-.657 6.234 6.234 0 0 1 1.023-.55 6.4 6.4 0 0 1 1.192-.37 6.63 6.63 0 0 1 3.248.15 4.301 4.301 0 0 1 1.475.826 3.736 3.736 0 0 1 .966 1.314 4.161 4.161 0 0 1 .34 1.703 4.304 4.304 0 0 1-.268 1.584z" fill="currentColor" fill-rule="evenodd"></path></svg>
+            Soporte</h1>
+        </div>
+        <div class="deseos">
+        <h1><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="18" role="presentation" alt="" data-testid="HeartIcon" size="18" color="currentColor"><path d="M22.3 1.3c-2.3 0-4.5 1-6.3 2.8-1.7-1.8-3.9-2.8-6.3-2.8C4.4 1.3 0 5.7 0 11.2c0 2.6 1.2 5.1 3.3 7.3L15 30.2c.3.3.6.4 1 .4.3 0 .7-.1 1-.4l11.6-11.6c1.5-1.8 3.3-4.3 3.3-7.5.1-5.4-4.3-9.8-9.6-9.8z" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"></path></svg>
+            Lista de deseos</h1>
+        </div>
+        <div class="sesion">
+        <h1><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="18" role="presentation" alt="" data-testid="UserIcon" size="18" color="currentColor"><path d="M16.22 19.41A9.71 9.71 0 1 1 26 9.7a9.74 9.74 0 0 1-9.8 9.71M1.84 32a10.88 10.88 0 0 1 10.94-10.74h6.57A10.88 10.88 0 0 1 30.29 32H1.84" fill="currentColor"></path></svg>
+            Iniciar sesión/ Regístrate</h1>
         </div>
     </div>
 
+    <!--Bar content-->
+
     <div class="content">
-        <h1>Juegos</h1>
-        <h1>Nintendo Switch</h1>
-        <h1>Noticias y Eventos</h1>
+        <h1><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" role="presentation" alt="" data-testid="DPadIcon" size="16" color="currentColor"><path d="M30.1 10.4h-8.5V1.9c0-1-.8-1.9-1.9-1.9h-7.5c-1 0-1.9.8-1.9 1.9v8.5H1.9c-1 0-1.9.8-1.9 1.9v7.5c0 1 .8 1.9 1.9 1.9h8.5v8.5c0 1 .8 1.9 1.9 1.9h7.5c1 0 1.9-.8 1.9-1.9v-8.5h8.5c1 0 1.9-.8 1.9-1.9v-7.5c-.1-1.1-.9-1.9-2-1.9zM7.5 16.9H3.8c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h3.8c.5 0 .9.4.9.9s-.5.9-1 .9zm9.4 11.3c0 .5-.4.9-.9.9s-.9-.4-.9-.9v-3.8c0-.5.4-.9.9-.9s.9.4.9.9v3.8zm0-20.7c0 .5-.4.9-.9.9s-.9-.4-.9-.9V3.8c0-.5.4-.9.9-.9s.9.4.9.9v3.7zm11.3 9.4h-3.8c-.5 0-.9-.4-.9-.9s.4-.9.9-.9h3.8c.5 0 .9.4.9.9.1.5-.3.9-.9.9z" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"></path></svg>
+             Juegos<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="12" role="presentation" alt="" data-testid="ChevronDownIcon" size="12" color="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M27.7 5.3L32 9.8 16 26.7 0 9.8l4.3-4.5L16 17.7z"></path></svg>
+        </h1>
+        <br>
+        <h1><span class="DropdownButtonstyles__IconContainer-sc-157lcb8-1 hofGBc"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" role="presentation" alt="" data-testid="SwitchIcon" size="16" color="currentColor"><path d="M13.54 0a.18.18 0 0 1 .17.17v31.66a.15.15 0 0 1-.17.17H8.11a6.86 6.86 0 0 1-6.85-6.8V6.74A6.81 6.81 0 0 1 8.11 0h5.43zm10.4 0a6.77 6.77 0 0 1 6.8 6.74V25.2a6.82 6.82 0 0 1-6.85 6.8h-5.43a.15.15 0 0 1-.17-.17V.17c0-.11.11-.17.22-.17h5.43zM7.49 19.6a1.26 1.26 0 1 0 0 2.51 1.32 1.32 0 0 0 1.31-1.25 1.28 1.28 0 0 0-1.31-1.26zm17-3.6a2.86 2.86 0 0 0-2.85 2.86A2.86 2.86 0 1 0 24.51 16zm-14.28.86a1.26 1.26 0 1 0 0 2.51 1.35 1.35 0 0 0 1.31-1.26 1.32 1.32 0 0 0-1.29-1.25zm-5.49 0a1.26 1.26 0 1 0 0 2.51 1.36 1.36 0 0 0 1.32-1.26 1.28 1.28 0 0 0-1.3-1.25zm2.75-2.69a1.26 1.26 0 1 0 0 2.52 1.37 1.37 0 0 0 1.33-1.26 1.28 1.28 0 0 0-1.31-1.26zm17-4a1.36 1.36 0 0 0-1.31 1.26 1.32 1.32 0 1 0 1.31-1.26zm-17-5.08a2.86 2.86 0 1 0 0 5.71 2.86 2.86 0 0 0 2.85-2.86 2.82 2.82 0 0 0-2.83-2.85zm19.77 2.4a1.26 1.26 0 1 0 1.31 1.25 1.32 1.32 0 0 0-1.29-1.25zm-5.43 0a1.26 1.26 0 1 0 1.31 1.25 1.29 1.29 0 0 0-1.29-1.25zm2.68-2.75A1.36 1.36 0 0 0 23.2 6a1.32 1.32 0 1 0 1.31-1.26z" fill="currentColor" fill-rule="evenodd"></path></svg></span>
+            Nintendo Switch<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="12" role="presentation" alt="" data-testid="ChevronDownIcon" size="12" color="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M27.7 5.3L32 9.8 16 26.7 0 9.8l4.3-4.5L16 17.7z"></path></svg>
+        </h1>
+        <h1><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" role="presentation" alt="" data-testid="NewsIcon" size="16" color="currentColor"><path fill="currentColor" d="M31.92 3.62a1.945 1.945 0 0 0-1.953-1.932H1.874A1.945 1.945 0 0 0-.08 3.62v10.068h32zm-32 11.692v7.201a2.027 2.027 0 0 0 1.954 1.998h8.711a2.777 2.777 0 0 1 2.178 1.073q2.97 4.736 3.315 4.728.344-.009 3.315-4.837a2.677 2.677 0 0 1 2.177-.964h8.398a2.027 2.027 0 0 0 1.953-1.998v-7.201zm14 5.15c0 .056-.07.1-.155.1H3.077c-.086 0-.156-.044-.156-.1v-1.051c0-.055.07-.1.156-.1h10.688c.086 0 .156.045.156.1z"></path></svg>
+            Noticias y Eventos</h1>
     </div>
+</div>
+
+      <!--Main-->
 
     <div class="mainImg">
-        <img class="cereza" src="https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_1300/ncom/en_US/merchandising/center-stage-banner/bayonetta-origins/3600x1300_BayoOrigins_centerstage_desktop">
+       <img class="background" src="https://fs-prod-cdn.nintendo-europe.com/media/images/06_screenshots/games_5/nintendo_switch_6/nswitch_bayonettaoriginscerezaandthelostdemon/NSwitch_BayonettaOriginsCerezaAndTheLostDemon_Trailer_03.jpg"> 
+        <img class="cereza" src="https://assets.nintendo.com/image/upload/f_auto/q_auto/c_fill,w_1300/ncom/en_US/merchandising/center-stage-banner/bayonetta-origins/3600x1300_BayoOrigins_centerstage_desktop"> 
     </div>
 
-    <featured-container></featured-container>
+    <div class="Disponible">
+        <h1>Ya disponible</h1> 
+    
+    </div>
+    <div class="buttonI">
+        <button class="InfoButton" >Ver todos los artículos de noticias</button>
+    </div>
+    <img class="teens" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/ESRB_2013_Teen_Spanish.svg/1200px-ESRB_2013_Teen_Spanish.svg.png">
+    <br>
+    <br>
 
-    <script src="./app/index.ts" type="module"></script>
+    <!--Page content-->
+    <div class="Destacados">
+        <h1 >Destacados</h1>
+    </div>
+   <br> <br> <br> <br> <br> <br> 
+    <app-container></app-container>
+    
+    
+
+    <div class="Novedades">
+        <h1>Novedades</h1>
+    </div>
+<div class="buttonA">
+    <button class="Articles" type="text" >Más Información</button>
+</div>
+    <div class="vendidos">
+        <h1>Los más vendidos de Nintendo Switch</h1>
+    </div>
+
+    <div class="Lanzamientos">
+        <h1>Nuevos lanzamientos de Nintendo Switch</h1>
+    </div>
+    
+    
+    
+
+
+    <script src="./app/index.js" type="module"></script>
 </body>

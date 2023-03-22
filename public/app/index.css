@@ -1,0 +1,303 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+    
+}
+
+.body{
+    overflow-y: hidden;
+
+}
+
+
+
+.imag{
+    width: 300px;
+    height: 150px;
+
+}
+/***bar**/
+.barcontainer{
+    width: 100%;
+    height: 106;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+}
+.bar{
+   
+    width: 100%;
+    height: 66px;
+    box-shadow: 0px 0px 0px 1px rgba(5, 5, 5, 0.177);
+    overflow-y: hidden;
+}
+.nintendo{
+    width: 140px;
+    height: 66px;
+    top: 0px;
+}
+
+.search{
+    top: -40px;
+    width: 360px;
+    left: 160px;
+    position: relative;
+    border-color: transparent;
+    box-shadow: 0px 1px 0px 0px rgba(5, 5, 5, 0.912);
+    overflow-y: hidden;
+}
+
+
+.searchInput{
+    position: relative;
+    left: 7%;
+    bottom: 23px;
+    text-align: center;
+    width: 350px;
+    
+    border-color: transparent;
+    font-size: 19px; 
+}
+
+.soporte{
+    position: absolute;
+    top: 15px;
+    right: 30%;
+    color: rgb(47, 47, 47);
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.soporte:hover{
+    position: absolute;
+    top: 15px;
+    right: 30%;
+    color: rgb(230, 0, 18);
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.deseos{
+    position: absolute;
+    top: 20px;
+    right: 18%;
+    color: rgb(47, 47, 47);
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.deseos:hover{
+    position: absolute;
+    top: 20px;
+    right: 18%;
+    color: rgb(230, 0, 18);
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.sesion{
+    position: fixed;
+    top: 20px;
+    right: 2%;
+    color: rgb(47, 47, 47);
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sesion:hover{
+    position: fixed;
+    top: 20px;
+    right: 2%;
+    color: rgb(230, 0, 18);
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+.content{
+    
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: 10px space-between;
+    align-items: center;   
+    overflow-y: hidden;
+}
+
+.content h1{
+    margin: 20px;
+    color: rgb(47, 47, 47);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content h1 :hover{
+    color: rgb(230, 0, 18);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content :hover{
+    color: rgb(230, 0, 18);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*titulos*/
+.Destacados h1{
+    position: absolute;
+    left: 2%;
+    top: 900px;
+    
+    color: rgb(72, 72, 72);
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Lanzamientos h1{
+    position: relative;
+    left: 7%;
+    top: 980px;
+    color: rgb(72, 72, 72);
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.vendidos h1{
+    position: relative;
+    left: 7%;
+    top: 440px;
+    color: rgb(72, 72, 72);
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Novedades h1{
+    position: relative;
+    left: 7%;
+    top: -900px;
+    color: rgb(72, 72, 72);
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/**Main image**/
+.mainImg{
+    width: 100%;
+   
+}
+
+.background{
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    z-index: 1;
+    height: 550px;
+}
+
+.cereza{
+    position: absolute;
+    top: 150px;
+    z-index: 2;
+    width: 1580px;
+    height: 550px;
+   left: 2%;
+   border-bottom-left-radius:5px;
+   border-bottom-right-radius:5px;   
+}
+
+.featuredContainer
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.Disponible{
+    position: absolute;
+    width: 990px;
+    height: 120px;
+    left: 2%;
+    top: 760px;
+    color: rgb(72, 72, 72);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttonA{
+    
+    font-size: 18px;
+    
+}
+
+.Articles{
+    position: absolute;
+    
+    left: 20%;
+    top: 740px;
+    
+    color: white;
+    background-color: rgb(230, 0, 18);
+    border-color: transparent;
+    border-radius: 10px;
+    height: 60px;
+    width: 300px;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.Articles:hover{
+    height: 70px;
+    width: 310px;
+    font-size: 24px;
+
+}
+
+
+.InfoButton{
+    position: absolute;
+    
+    left: 8%;
+    top: 4000px;
+    
+    color: white;
+    background-color: rgb(230, 0, 18);
+    border-color: transparent;
+    border-radius: 10px;
+    height: 60px;
+    width: 380px;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.InfoButton:hover{
+    height: 70px;
+    width: 390px;
+    font-size: 24px;
+
+}
+
+
+.teens{
+    position: absolute;
+    left: 70%;
+    top: 740px;
+    width: 60px;
+    height: 100px;
+}
+
+
+
+
+
+
+
+

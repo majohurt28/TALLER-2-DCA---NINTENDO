@@ -1,19 +1,19 @@
 export enum Attribute{
     "image"= "image",
     "description"= "description",
-    "gameConsole" = "gameConsole",
+    "gameconsole" = "gameconsole",
 }
 
 class featuredContent extends HTMLElement{
     image?: string
     description?: string
-    gameConsole?: string
+    gameconsole?: string
     
     static get observedAttributes(){
         const attrs : Record<Attribute,null> ={
             image : null,
             description :null,
-            gameConsole : null, 
+            gameconsole : null, 
             
         }
         return Object.keys(attrs)
@@ -41,17 +41,20 @@ class featuredContent extends HTMLElement{
         if (this.shadowRoot){
             this.shadowRoot.innerHTML = `
             <link rel="stylesheet" href="./app/components/featured/featured.css">
-            <section>
+            
+            <div class="featured-containercard">
             <img class="imag" src="${this.image}">
             <p1><strong>${this.description}</strong></p1>
-            <h2>${this.gameConsole}</h2>
-            </section>
+            <h2>${this.gameconsole}</h2>
+            </div>
+            
+            
             `
         }
     }
 
 }
 
-customElements.define("featured-content", featuredContent)
+customElements.define("featured-contentcard", featuredContent)
 export default featuredContent;
 
